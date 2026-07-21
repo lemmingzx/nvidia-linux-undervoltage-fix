@@ -24,18 +24,19 @@ Unlike basic workarounds that rely on persistent `cron` jobs or background loops
 4. **Action:** If the AC charger is reconnected after a low-battery event, `systemctl restart nvidia-powerd` is executed in milliseconds to restore full GPU performance state (**P0**).
 
 ---
+🤝 Credits & Acknowledgements
+Shaurya Odedara (@lemmingzx/@shauryaservice) – Bug discovery, empirical state testing, system architecture, udev integration, and project maintainer.
+
+Google Gemini – AI pair-programming assistant for initial C logic implementation and installation script scaffolding and the readme section writer.
+---
 
 ## 🛠️ Installation
 
 Clone the repository and run the installer script with root privileges:
 
+```bash
 git clone [https://github.com/lemmingzx/nvidia-linux-undervoltage-fix.git](https://github.com/lemmingzx/nvidia-linux-undervoltage-fix.git)
 cd nvidia-linux-undervoltage-fix
 chmod +x patch.sh
 sudo ./patch.sh
 
-
-🤝 Credits & Acknowledgements
-Shaurya Odedara (@lemmingzx/@shauryaservice) – Bug discovery, empirical state testing, system architecture, udev integration, and project maintainer.
-
-Google Gemini – AI pair-programming assistant for initial C logic implementation and installation script scaffolding and the readme section writer.
