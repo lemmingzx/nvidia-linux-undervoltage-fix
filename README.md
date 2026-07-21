@@ -26,7 +26,7 @@ Unlike basic workarounds that rely on persistent `cron` jobs or background loops
 ---
 🤝 Credits & Acknowledgements
 Shaurya Odedara (@lemmingzx/@shauryaservice) – Bug discovery, empirical state testing, system architecture, udev integration, and project maintainer.
-
+---
 Google Gemini – AI pair-programming assistant for initial C logic implementation and installation script scaffolding and the readme section writer.
 ---
 
