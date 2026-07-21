@@ -7,7 +7,7 @@
 ## 📌 Overview
 
 `nvidia-linux-undervoltage-fix` solves a persistent bug in `nvidia-powerd` where dropping below the system's low-battery threshold locks the GPU into performance state **P5** (underwattaged/clock-throttled). 
-
+ 
 On affected hybrid Linux laptops (e.g., Lenovo IdeaPad Gaming series with AMD/NVIDIA), reconnecting AC power fails to trigger a daemon re-evaluation. This leaves the GPU stuck in a low-power state even after the battery recharges to 100%.
 
 This repository provides an event-driven `udev` hardware trigger and a compiled C binary to automatically reset `nvidia-powerd` state tracking immediately upon plugging in the charger—consuming **0% background CPU and 0 MB RAM**.
